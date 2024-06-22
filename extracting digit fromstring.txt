@@ -1,0 +1,12 @@
+#extract digit from string june 22
+s=input().split(" ")
+l=[]
+for i in s:
+  if i.isdigit() and '9' not in i:
+    i=int(i)
+    l.append(i)
+print(l)
+if l:
+  print(max(l))
+else:
+  print(-1)
